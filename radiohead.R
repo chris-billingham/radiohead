@@ -37,7 +37,8 @@ radio_uni_sent %>% ggplot(aes(pos, rollsum)) +
   facet_wrap(~ album, scales = "free") +
   ggtitle("Radiohead Cumulative Sentiment per Album") +
   xlab("Word Position in Album") +
-  ylab("Cumulative Sentiment per Album")
+  ylab("Cumulative Sentiment per Album") +
+  ggsave("plots/radiohead_all.png")
 
 
 # what's going on with Kid A
@@ -48,7 +49,8 @@ radio_uni_sent %>%
   facet_wrap(~ song, scales = "free") +
   ggtitle("Kid A Cumulative Sentiment per Song") +
   xlab("Word Position in Album") +
-  ylab("Cumulative Sentiment per Album")
+  ylab("Cumulative Sentiment per Album") +
+  ggsave("plots/kid_a.png")
 
 # let's check the rest of the albums
 radio_uni_sent %>% 
@@ -58,7 +60,8 @@ radio_uni_sent %>%
   facet_wrap(~ song, scales = "free") +
   ggtitle("Pablo Honey Cumulative Sentiment per Song") +
   xlab("Word Position in Album") +
-  ylab("Cumulative Sentiment per Album")
+  ylab("Cumulative Sentiment per Album") + 
+  ggsave("plots/pablo_honey.png")
 
 radio_uni_sent %>% 
   filter(album == "The Bends") %>%
@@ -67,7 +70,8 @@ radio_uni_sent %>%
   facet_wrap(~ song, scales = "free") +
   ggtitle("The Bends Cumulative Sentiment per Song") +
   xlab("Word Position in Album") +
-  ylab("Cumulative Sentiment per Album")
+  ylab("Cumulative Sentiment per Album") +
+  ggsave("plots/the_bends.png")
 
 radio_uni_sent %>% 
   filter(album == "OK Computer") %>%
@@ -76,7 +80,8 @@ radio_uni_sent %>%
   facet_wrap(~ song, scales = "free") +
   ggtitle("OK Computer Cumulative Sentiment per Song") +
   xlab("Word Position in Album") +
-  ylab("Cumulative Sentiment per Album")
+  ylab("Cumulative Sentiment per Album") +
+  ggsave("plots/ok_computer.png")
 
 radio_uni_sent %>% 
   filter(album == "Amnesiac") %>%
@@ -85,7 +90,8 @@ radio_uni_sent %>%
   facet_wrap(~ song, scales = "free") +
   ggtitle("Amnesiac Cumulative Sentiment per Song") +
   xlab("Word Position in Album") +
-  ylab("Cumulative Sentiment per Album")
+  ylab("Cumulative Sentiment per Album") +
+  ggsave("plots/amnesiac.png")
 
 radio_uni_sent %>% 
   filter(album == "Hail To The Thief") %>%
@@ -94,7 +100,8 @@ radio_uni_sent %>%
   facet_wrap(~ song, scales = "free") +
   ggtitle("Hail to the Thief Cumulative Sentiment per Song") +
   xlab("Word Position in Album") +
-  ylab("Cumulative Sentiment per Album")
+  ylab("Cumulative Sentiment per Album") +
+  ggsave("plots/hail_to_the_thief.png")
 
 radio_uni_sent %>% 
   filter(album == "In Rainbows") %>%
@@ -103,7 +110,8 @@ radio_uni_sent %>%
   facet_wrap(~ song, scales = "free") +
   ggtitle("In Rainbows Cumulative Sentiment per Song") +
   xlab("Word Position in Album") +
-  ylab("Cumulative Sentiment per Album")
+  ylab("Cumulative Sentiment per Album") +
+  ggsave("plots/in_rainbows.png")
 
 radio_uni_sent %>% 
   filter(album == "The King of Limbs") %>%
@@ -112,7 +120,8 @@ radio_uni_sent %>%
   facet_wrap(~ song, scales = "free") +
   ggtitle("The King of Limbs Cumulative Sentiment per Song") +
   xlab("Word Position in Album") +
-  ylab("Cumulative Sentiment per Album")
+  ylab("Cumulative Sentiment per Album") +
+  ggsave("plots/king_of_limbs.png")
 
 radio_uni_sent %>% 
   filter(album == "A Moon Shaped Pool") %>%
@@ -121,5 +130,6 @@ radio_uni_sent %>%
   facet_wrap(~ song, scales = "free") +
   ggtitle("A Moon Shaped Pool Cumulative Sentiment per Song") +
   xlab("Word Position in Album") +
-  ylab("Cumulative Sentiment per Album")
+  ylab("Cumulative Sentiment per Album") +
+  ggsave("plots/moon_shaped_pool.png")
 
